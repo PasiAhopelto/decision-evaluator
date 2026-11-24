@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout(~{::title}, ~{::main})}">
+<head>
+    <title>Decision Evaluator</title>
+</head>
+<body>
+<main>
+    <p>The application skeleton is running.</p>
+    <button hx-get="/ping" hx-target="#ping-result" hx-swap="innerHTML">Test htmx</button>
+    <div id="ping-result"></div>
+</main>
+</body>
+</html>
