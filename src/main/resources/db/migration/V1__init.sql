@@ -1,0 +1,7 @@
+-- Initial schema for decision-evaluator.
+--
+-- Flyway runs the scripts in this directory in version order at application startup
+-- (V1__init.sql, V2__<description>.sql, ...). Add tables and seed data here, or in new
+-- versioned files. JPA entities are validated against this schema (ddl-auto=validate).
+--
+-- Intentionally empty for now: no data model has been defined yet.
