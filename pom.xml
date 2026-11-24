@@ -39,10 +39,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-h2console</artifactId>
-        </dependency>
+        <!-- In-memory only (jdbc:h2:mem), no TCP server and no web console:
+             the database is reachable solely from inside the application JVM. -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

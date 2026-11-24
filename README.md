@@ -3,7 +3,8 @@
 Empty application framework for a Spring Boot web app.
 
 - **Spring Boot 4.2** (Java 21, Maven)
-- **H2** in-memory database with Spring Data JPA
+- **H2** in-memory database with Spring Data JPA, reachable only from the backend
+  (no web console, no TCP server)
 - **htmx** UI (server-rendered Thymeleaf templates + htmx served as a WebJar)
 
 ## Run
@@ -12,10 +13,7 @@ Empty application framework for a Spring Boot web app.
 ./mvnw spring-boot:run
 ```
 
-Then open:
-
-- App: http://localhost:8080
-- H2 console: http://localhost:8080/h2-console (JDBC URL `jdbc:h2:mem:decisions`, user `sa`, empty password)
+Then open http://localhost:8080
 
 ## Test
 

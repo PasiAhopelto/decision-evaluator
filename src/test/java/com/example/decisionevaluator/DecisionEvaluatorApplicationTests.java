@@ -31,4 +31,10 @@ class DecisionEvaluatorApplicationTests {
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("htmx works")));
     }
+
+    @Test
+    void h2ConsoleIsNotExposed() throws Exception {
+        mockMvc.perform(get("/h2-console"))
+                .andExpect(status().isNotFound());
+    }
 }
